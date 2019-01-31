@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>160216737316</title>
+<style>
+td,th{
+padding:5px;
+color:aliceblue;
+}
+    </style>
+    <script type="application/javascript">
+    function validationform(){
+         var firstname = document.forms["myForm"]["firstname"].value;
+        var lastname = document.forms["myForm"]["lastname"].value;
+        var phoneno = document.forms["myForm"]["phoneno"].value;
+        var city = document.form["myForm"]["city"].value;
+        var pincode = document.form["myForm"]["pincode"].value;
+        var state = document.form["myForm"]["state"].value;
+        var Xpercentage = document.forms["myForm"]["xpercentage"].value;
+        var XIIpercentage = document.forms["myForm"]["XIIpercentage"].value;
+        var graduation = document.forms["myForm"]["graduation"].value;
+        var masters = document.forms["myForm"]["masters"].value;
+        var letters = /^[a-zA-Z]+$/;
+        var number = /^[0-9]+$/;
+         if (!firstname.match(letter) || firstname.length > 30) {
+                alert("First Name must be filled out");
+                return false;
+        
+            }
+            if (!/^\d{10}$/.test(phoneno)) {
+                alert("mobile number is worng");
+            }
+            if (!city.match(letter) || firstname.length > 30) {
+                alert("City must be filled out");
+                return false;
+            }
+            if (!/^\d{6}$/.test(pincode) || pincode.length > 6) {
+                alert("Pin Code is incorrect");
+                return false;
+            }
+            if (!state.match(letter) || firstname.length > 30) {
+                alert("State must be filled out");
+                return false;
+            }
+
+        }
+</script>
+</head>
+    <form name="myForm" onsubmit="return validateForm()">
+    <h1 align="center">
+        <font color="blue">STUDENT REGESTRATION FORM 316</font>
+    </h1>
+    <table bgcolor="blue" align="center">
+        <tr>
+            <td>FIRST NAME:</td>
+            <td><input type="text" name="firstname">(max.30charactersa-zandA-Z)</td>
+
+        </tr>
+        <tr>
+            <td>LAST NAME:</td>
+            <td><input type="text" name="lastname">(max.30 characters a-z and A-Z)</td>
+        </tr>
+        <tr>
+            <td>DATE OF BIRTH:</td>
+            <td><input type="date" name="dob"></td>
+        </tr>
+        <tr>
+            <td>EMAIL ID:</td>
+            <td><input type="text" name="email"></td>
+        </tr>
+        <tr>
+            <td> MOBILE NUMBER:</td>
+            <td><input type="text" name="phoneno">(10 digit number)</td>
+        </tr>
+        <tr>
+            <td>GENDER:</td>
+            <td><input type ="radio" name="gender" value="male">male
+                <input type = "radio" name="gender" value="female">female
+            </td>
+        </tr>
+        <tr>
+        <td>ADDRESS:</td>
+        <td><input type ="text" name="address"></td>
+        </tr>
+        <tr>
+            <td>CITY:</td>
+            <td><input type ="text" name="city"></td>
+        </tr>
+      <tr>
+          <td>PINCODE:</td>
+          <td><input type="text" name="pincode">(6 digit number)</td>
+        </tr>
+        <tr>
+            <td>STATE:</td>
+            <td><input type="text" name="state">(max 30 digit number)</td>
+        </tr>
+        <tr>
+            <td>COUNTRY:</td>
+            <td><input type="text" name="country"></td>
+        </tr>
+        <tr>
+            <td>HOBBIES:</td>
+            <td><input type="checkbox" name="dancing">dancing
+                <input type="checkbox" name="pubg">pubg
+                <input type="checkbox" name="singing">singing
+                <input type="checkbox" name="tik tok">tik tok
+                <input type="text" name="others">
+            </td>
+        </tr>
+        <tr>
+            <td>QUALIFICATIONS:</td>
+            <td> <table bgcolor="blue">
+                <tr>
+                    <th>SNO.</th>
+                    <th>EXAMINATION</th>
+                    <th>BOARD</th>
+                    <th>PERCENTAGE</th>
+                    <th>YEAR OF PASSING</th>
+                </tr>
+                 <tr><td>1</td>
+                        <td>ClassX</td>
+                        <td><input type="text" maxlength="10"></td>
+                        <td><input type="text" maxlength="2" name="Xpercentage"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                <tr><td>2</td>
+                        <td>ClassXII</td>
+                        <td><input type="text" maxlength="10"></td>
+                        <td><input type="text" maxlength="2" name="Xpercentage"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                 <tr><td>3</td>
+                        <td>GRADUATION</td>
+                        <td><input type="text" maxlength="10"></td>
+                        <td><input type="text" maxlength="2" name="Xpercentage"></td>
+                        <td><input type="text"></td>
+                    </tr>
+ <tr><td>4</td>
+                        <td>MASTERS</td>
+                        <td><input type="text" maxlength="10"></td>
+                        <td><input type="text" maxlength="2" name="Xpercentage"></td>
+                        <td><input type="text"></td>
+                    </tr>
+        </table>
+            </td>  </table>    </form>
+</html>
